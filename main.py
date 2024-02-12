@@ -6,8 +6,18 @@ class Client :
     def whm(self):
         print("Im a client")
 
-
+class Employee(Client) :
+    def __init__(self,name,age,spec):
+        super().__init__(name,age)
+        self._name = name
+        self._age = age
+        self._spec = spec
+    def whm(self):
+        print("Im a employee " + self._spec)
 jo = Client("Jo",21)
 
 jo.whm()
 
+karl = Employee("Karl",22,"Enginear")
+
+karl.whm()
