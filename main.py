@@ -14,6 +14,10 @@ class Employee(Client) :
         self._spec = spec
     def whm(self):
         print("Im a employee " + self._spec)
+    def work(self):
+        print("Im working")
+
+
 jo = Client("Jo",21)
 
 jo.whm()
