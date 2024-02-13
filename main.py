@@ -17,6 +17,8 @@ class Employee(Client) :
     def work(self):
         print("Im working")
 
+    def getSpec(self):
+        return self._spec
 
 jo = Client("Jo",21)
 
@@ -25,3 +27,4 @@ jo.whm()
 karl = Employee("Karl",22,"Enginear")
 
 karl.whm()
+print(karl.getSpec())
